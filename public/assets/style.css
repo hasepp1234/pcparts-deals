@@ -1,0 +1,89 @@
+:root {
+  --accent: #d9480f;
+  --bg: #fafafa;
+  --card-bg: #ffffff;
+  --border: #e2e2e2;
+  --text: #222;
+  --muted: #666;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+.site-header .logo { font-weight: bold; font-size: 1.2rem; color: var(--text); text-decoration: none; }
+.site-header .nav a { margin-left: 1rem; color: var(--text); text-decoration: none; font-size: 0.95rem; }
+.site-header .nav a:hover { color: var(--accent); }
+main { max-width: 960px; margin: 0 auto; padding: 1.5rem; }
+h1 { font-size: 1.6rem; }
+h2 { font-size: 1.3rem; margin-top: 2rem; }
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.product-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+}
+.product-card h3 { font-size: 1rem; margin: 0 0 0.5rem; }
+.product-card .price { font-size: 1.3rem; font-weight: bold; color: var(--accent); }
+.product-card .drop { color: #c92a2a; font-weight: bold; font-size: 0.9rem; }
+.product-card .no-price { color: var(--muted); font-size: 0.9rem; }
+.pr-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  background: #ffe066;
+  color: #664d03;
+  border-radius: 4px;
+  padding: 0.1rem 0.4rem;
+  margin-left: 0.3rem;
+  vertical-align: middle;
+}
+.buy-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+.category-links a {
+  display: inline-block;
+  margin: 0.2rem 0.4rem 0.2rem 0;
+  padding: 0.3rem 0.7rem;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+.price-note { font-size: 0.8rem; color: var(--muted); }
+.faq dt { font-weight: bold; margin-top: 0.8rem; }
+.faq dd { margin-left: 0; color: var(--muted); }
+.site-footer {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-align: center;
+}
+canvas.price-chart { max-width: 100%; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 0.5rem; }
