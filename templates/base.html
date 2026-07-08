@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>$title</title>
+<meta name="description" content="$description">
+<link rel="canonical" href="$canonical_url">
+<meta property="og:type" content="website">
+<meta property="og:title" content="$title">
+<meta property="og:description" content="$description">
+<meta property="og:url" content="$canonical_url">
+<meta property="og:image" content="$site_url/assets/ogp.png">
+<meta property="og:site_name" content="$site_name">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="$title">
+<meta name="twitter:description" content="$description">
+<link rel="stylesheet" href="$root_prefix/assets/style.css">
+$extra_head
+$ga4_snippet
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="$root_prefix/index.html">$site_name</a>
+  <nav class="nav">
+    <a href="$root_prefix/index.html">トップ</a>
+    <a href="$root_prefix/category/gpu.html">GPU</a>
+    <a href="$root_prefix/category/cpu.html">CPU</a>
+    <a href="$root_prefix/category/ssd.html">SSD</a>
+  </nav>
+</header>
+<main>
+$body
+</main>
+<footer class="site-footer">
+  <p class="disclosure">当サイトはアフィリエイトプログラム（Amazonアソシエイト・楽天アフィリエイト等）を利用して収益を得ています。商品リンクには「PR」を明示しています。掲載価格は取得時点のものであり、実際の販売価格と異なる場合があります。ご購入前に必ず販売ページで最新の価格・仕様をご確認ください。</p>
+  <p class="copyright">&copy; $site_name</p>
+</footer>
+</body>
+</html>
