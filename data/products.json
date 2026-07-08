@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0",
+  "note": "初期MVP対象カテゴリ: gpu, cpu, ssd の3カテゴリのみ先行。他カテゴリ(memory/motherboard/psu/case/cooler/peripheral)は後日追加予定（残タスク）。rakuten_item_code / asin は楽天アプリID取得後にfetch_prices.py側の商品検索で照合・補完する（本ファイルでは未確定のためnull）。spec_summaryは概況のみで、公開前に一次ソース(メーカー公式サイト)で価格・仕様を再確認すること。",
+  "last_updated": "2026-07-08",
+  "products": [
+    {
+      "product_id": "gpu-rtx5090",
+      "name": "GeForce RTX 5090 搭載グラフィックボード",
+      "category": "gpu",
+      "brand": "NVIDIA (各社AIBモデル)",
+      "spec_summary": "Blackwellアーキテクチャ最上位。VRAM 32GB級。ハイエンド4K/クリエイティブ用途。",
+      "asin": null,
+      "rakuten_item_code": null
+    },
+    {
+      "product_id": "gpu-rtx5070ti",
+      "name": "GeForce RTX 5070 Ti 搭載グラフィックボード",
+      "category": "gpu",
+      "brand": "NVIDIA (各社AIBモデル)",
+      "spec_summary": "WQHD〜4K向けハイエンドミドル。DLSSマルチフレーム生成対応。",
+      "asin": null,
+      "rakuten_item_code": null
+    },
+    {
+      "product_id": "gpu-rtx5070",
+      "name": "GeForce RTX 5070 搭載グラフィックボード",
+      "category": "gpu",
+      "brand": "NVIDIA (各社AIBモデル)",
+      "spec_summary": "WQHD〜4KをDLSS込みでカバーする人気モデル。",
+      "asin": null,
+      "rakuten_item_code": null
+    },
+    {
+      "product_id": "gpu-rtx5060ti-16gb",
+      "name": "GeForce RTX 5060 Ti 16GB 搭載グラフィックボード",
+      "category": "gpu",
+      "brand": "NVIDIA (各社AIBモデル)",
+      "spec_summary": "16GB VRAMでコスパ最強クラス。ミドルレンジの総合1位評価あり。",
+      "asin": null,
+      "rakuten_item_code": null
+    },
+    {
+      "product_id": "gpu-rx9070xt",
+      "name": "Radeon RX 9070 XT 搭載グラフィックボード",
+      "category": "gpu",
+      "brand": "AMD (各社AIBモデル)",
+      "spec_summary": "RDNA4世代。WQHD〜4K入門でコスパ最強クラスと評価。",
+      "asin": null,
+      "rakuten_item_code": null
+    },
+    {
+      "product_id": "cpu-ryzen9-9950x3d",
+      "name": "AMD Ryzen 9 9950X3D",
+      "category": "cpu",
+      "brand": "AMD",
+      "spec_summary": "Zen5デスクトップ最上位。16コード/高メモリ帯域。クリエイティブ・マルチスレッド最強クラス。",
+      "asin": null,
+      "rakuten_item_code": null
+    },
+    {
+      "product_id": "cpu-ryzen7-9800x3d",
+      "name": "AMD Ryzen 7 9800X3D",
+      "category": "cpu",
+      "brand": "AMD",
+      "spec_summary": "3D V-Cache搭載。ゲーミング性能で高評価が続く定番モデル。",
+      "asin": null,
+      "rakuten_item_code": null
+    },
+    {
+      "product_id": "cpu-ryzen7-9700x",
+      "name": "AMD Ryzen 7 9700X",
+      "category": "cpu",
+      "brand": "AMD",
+      "spec_summary": "8コア/16スレッド。ゲーミング用途のコスパ最良帯と評価。",
+      "asin": null,
+      "rakuten_item_code": null
+    },
+    {
+      "product_id": "cpu-core-ultra9-285k",
+      "name": "Intel Core Ultra 9 285K",
+      "category": "cpu",
+      "brand": "Intel",
+      "spec_summary": "Core Ultra 200シリーズ最上位。マルチスレッド性能重視。",
+      "asin": null,
+      "rakuten_item_code": null
+    },
+    {
+      "product_id": "cpu-core-ultra7-265k",
+      "name": "Intel Core Ultra 7 265K",
+      "category": "cpu",
+      "brand": "Intel",
+      "spec_summary": "Core Ultra 200シリーズ中上位。価格重視ユーザー向け。",
+      "asin": null,
+      "rakuten_item_code": null
+    },
+    {
+      "product_id": "ssd-wd-black-sn7100",
+      "name": "SanDisk WD_BLACK SN7100 NVMe SSD",
+      "category": "ssd",
+      "brand": "SanDisk (WD_BLACK)",
+      "spec_summary": "PCIe4.0 NVMe。2026年7月時点で売れ筋上位の定番モデル。",
+      "asin": null,
+      "rakuten_item_code": null
+    },
+    {
+      "product_id": "ssd-crucial-t705",
+      "name": "Crucial T705 NVMe SSD",
+      "category": "ssd",
+      "brand": "Crucial",
+      "spec_summary": "PCIe5.0対応。最大級の読込速度を謳うハイエンドモデル。要冷却対策。",
+      "asin": null,
+      "rakuten_item_code": null
+    },
+    {
+      "product_id": "ssd-xpg-mars980-blade",
+      "name": "XPG MARS 980 BLADE NVMe SSD",
+      "category": "ssd",
+      "brand": "XPG (ADATA)",
+      "spec_summary": "PCIe5.0対応。最大14,000MB/s級。PS5対応ヒートシンクモデルあり。",
+      "asin": null,
+      "rakuten_item_code": null
+    },
+    {
+      "product_id": "ssd-samsung-990pro",
+      "name": "Samsung SSD 990 PRO",
+      "category": "ssd",
+      "brand": "Samsung",
+      "spec_summary": "PCIe4.0 NVMe。定番の高耐久・高評価モデル。",
+      "asin": null,
+      "rakuten_item_code": null
+    },
+    {
+      "product_id": "ssd-gen5-value",
+      "name": "PCIe5.0 NVMe SSD（コスパモデル）",
+      "category": "ssd",
+      "brand": "各社",
+      "spec_summary": "PCIe5.0参入の価格重視モデル。型番は公開前に一次ソースで確定。",
+      "asin": null,
+      "rakuten_item_code": null
+    }
+  ]
+}
