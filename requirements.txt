@@ -1,0 +1,2 @@
+# fetch_prices.py / detect_deals.py は標準ライブラリのみで動作する（追加インストール不要）。
+# 将来 build.py 等でChart.js用データ整形以外の外部処理が必要になった場合はここに追記する。
