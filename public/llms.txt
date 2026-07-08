@@ -1,0 +1,14 @@
+# PCパーツセール情報
+
+> GPU・CPU・SSDなど主要PCパーツのセール・値下がり情報を、楽天市場の公式APIから自動収集して
+> 掲載している情報サイトです。価格は取得時点のものです。
+
+## 主要ページ
+- トップページ（値下がりランキング）: https://pcparts-deals.vercel.app/index.html
+- GPU一覧: https://pcparts-deals.vercel.app/category/gpu.html
+- CPU一覧: https://pcparts-deals.vercel.app/category/cpu.html
+- SSD一覧: https://pcparts-deals.vercel.app/category/ssd.html
+
+## 収益モデル
+アフィリエイトリンク（Amazonアソシエイト・楽天アフィリエイト等）による収益を得ています。
+商品リンクには「PR」を明示しています。
