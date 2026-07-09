@@ -42,7 +42,7 @@ DEALS_PATH = os.path.join(DATA_DIR, "deals.json")
 # --- サイト設定（要確認事項。計画書セクション14が確定次第ここを更新する） ---
 SITE_URL = "https://pcparts-deals.vercel.app"  # 仮URL。本番ドメイン確定後に要更新
 SITE_NAME = "PCパーツセール情報"
-GA4_MEASUREMENT_ID = ""  # 例: "G-XXXXXXXXXX"。未設定の間はGA4タグを出力しない
+GA4_MEASUREMENT_ID = "G-XZPN5YCFJW"  # 2026-07-09 GA4プロパティ「PCパーツセール情報 (No.59)」作成時に発行
 
 CATEGORIES = [
     ("gpu", "グラフィックボード (GPU)"),
