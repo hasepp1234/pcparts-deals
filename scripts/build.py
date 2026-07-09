@@ -43,6 +43,7 @@ DEALS_PATH = os.path.join(DATA_DIR, "deals.json")
 SITE_URL = "https://pcparts-deals.vercel.app"  # 仮URL。本番ドメイン確定後に要更新
 SITE_NAME = "PCパーツセール情報"
 GA4_MEASUREMENT_ID = "G-XZPN5YCFJW"  # 2026-07-09 GA4プロパティ「PCパーツセール情報 (No.59)」作成時に発行
+ADSENSE_CLIENT_ID = "ca-pub-9618539805759239"  # 2026-07-09 AdSenseに本サイトを追加し所有権確認用に設定（事業用アカウント）
 
 CATEGORIES = [
     ("gpu", "グラフィックボード (GPU)"),
@@ -117,6 +118,12 @@ function gtag(){{dataLayer.push(arguments);}}
 gtag('js', new Date());
 gtag('config', '{GA4_MEASUREMENT_ID}');
 </script>"""
+    adsense_snippet = ""
+    if ADSENSE_CLIENT_ID:
+        adsense_snippet = (
+            f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADSENSE_CLIENT_ID}" '
+            f'crossorigin="anonymous"></script>'
+        )
     return tpl.substitute(
         title=esc(title),
         description=esc(description),
@@ -126,6 +133,7 @@ gtag('config', '{GA4_MEASUREMENT_ID}');
         root_prefix=root_prefix,
         extra_head=extra_head,
         ga4_snippet=ga4_snippet,
+        adsense_snippet=adsense_snippet,
         body=body_html,
     )
 
