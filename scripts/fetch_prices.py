@@ -171,7 +171,13 @@ def main():
         if product.get("rakuten_item_code"):
             item = search_by_item_code(app_id, access_key, affiliate_id, product["rakuten_item_code"])
         else:
-            item = search_by_keyword(app_id, access_key, affiliate_id, product["name"])
+            # 楽天APIのkeywordパラメータは半角スペース区切りでAND検索される仕様のため、
+            # 単独の半角1文字トークン（例: "Ryzen 9"の"9"）があると
+            # HTTP 400 wrong_parameter("keyword is not valid")になる。
+            # search_keywordフィールドがproducts.jsonにあればそちらを優先し、
+            # なければnameをそのまま使う（2026-07-10判明・修正）。
+            search_keyword = product.get("search_keyword") or product["name"]
+            item = search_by_keyword(app_id, access_key, affiliate_id, search_keyword)
             if item and item.get("itemCode"):
                 product["rakuten_item_code"] = item["itemCode"]
                 products_updated = True
