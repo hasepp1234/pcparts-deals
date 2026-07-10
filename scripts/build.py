@@ -49,8 +49,12 @@ CATEGORIES = [
     ("gpu", "グラフィックボード (GPU)"),
     ("cpu", "CPU"),
     ("ssd", "SSD"),
-    # 残りのカテゴリ(memory/motherboard/psu/case/cooler/peripheral)は
-    # products.json側の対象追加とあわせて、ここにも追記する（残タスク）。
+    ("memory", "メモリ"),
+    ("motherboard", "マザーボード"),
+    ("psu", "電源ユニット"),
+    ("case", "PCケース"),
+    ("cooler", "CPUクーラー"),
+    ("peripheral", "周辺機器"),
 ]
 
 
@@ -203,7 +207,7 @@ def render_index(products, history, latest_record, deals):
     )
 
     body = f"""<h1>{esc(SITE_NAME)}</h1>
-<p>GPU・CPU・SSDなど主要PCパーツのセール・値下がり情報を、楽天市場の公式APIから自動収集して掲載しています。</p>
+<p>GPU・CPU・SSD・メモリ・マザーボード・電源・ケース・クーラー・周辺機器など主要PCパーツのセール・値下がり情報を、楽天市場の公式APIから自動収集して掲載しています。</p>
 <div class="category-links">{category_links}</div>
 {deals_section}
 <h2>よくある質問</h2>
@@ -225,7 +229,7 @@ def render_index(products, history, latest_record, deals):
 
     html_out = render_page(
         title=f"{SITE_NAME}｜PCパーツのセール・値下がり情報",
-        description="GPU・CPU・SSDなど主要PCパーツのセール・値下がりを楽天市場の公式APIから自動収集。値下がりランキングを毎日更新。",
+        description="GPU・CPU・SSD・メモリ・マザーボード・電源・ケース・クーラー・周辺機器など主要PCパーツのセール・値下がりを楽天市場の公式APIから自動収集。値下がりランキングを毎日更新。",
         canonical_path="/",
         body_html=body,
         extra_head=extra_head,
@@ -361,16 +365,17 @@ Sitemap: {SITE_URL}/sitemap.xml
 
 
 def render_llms_txt():
+    category_lines = "\n".join(
+        f"- {esc(label)}一覧: {SITE_URL}/category/{key}.html" for key, label in CATEGORIES
+    )
     content = f"""# {SITE_NAME}
 
-> GPU・CPU・SSDなど主要PCパーツのセール・値下がり情報を、楽天市場の公式APIから自動収集して
+> GPU・CPU・SSD・メモリ・マザーボード・電源・ケース・クーラー・周辺機器など主要PCパーツのセール・値下がり情報を、楽天市場の公式APIから自動収集して
 > 掲載している情報サイトです。価格は取得時点のものです。
 
 ## 主要ページ
 - トップページ（値下がりランキング）: {SITE_URL}/index.html
-- GPU一覧: {SITE_URL}/category/gpu.html
-- CPU一覧: {SITE_URL}/category/cpu.html
-- SSD一覧: {SITE_URL}/category/ssd.html
+{category_lines}
 
 ## 収益モデル
 アフィリエイトリンク（Amazonアソシエイト・楽天アフィリエイト等）による収益を得ています。
