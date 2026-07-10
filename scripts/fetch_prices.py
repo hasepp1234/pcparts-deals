@@ -38,9 +38,11 @@ PRICES_PATH = os.path.join(DATA_DIR, "prices.json")
 
 ENDPOINT = "https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20260401"
 REQUEST_INTERVAL_SEC = 1.0  # 楽天API側のレート制限対策（目安1req/sec。要件登録画面ではQPS=1で申請）
-# 楽天API（Webサービス種別）は登録したApplication URLとHTTP Refererの一致を要求する。
-# 未設定だと 403 REQUEST_CONTEXT_BODY_HTTP_REFERRER_MISSING で拒否される
-# （2026-07-09 GitHub Actions実行時に発見。secrets_rakuten_api.md記載のApplication URLと一致させること）。
+# 楽天API（2026年新仕様・Webサービス種別）はOrigin/Refererヘッダーが無いと
+# 403 REQUEST_CONTEXT_BODY_HTTP_REFERRER_MISSING で拒否される。
+# エラーメッセージは「Referer」だが実際に効くのは「Origin」ヘッダー（2026-07-09
+# GitHub Actions実機テストで確認。Refererのみでは403のまま、Origin追加で解消）。
+# 念のため両方を登録済みApplication URLで送信する。
 APPLICATION_REFERER = "https://pcparts-deals.vercel.app/"
 
 
@@ -78,6 +80,7 @@ def call_api(params):
         headers={
             "User-Agent": "pcparts-deals-fetcher/1.0",
             "Referer": APPLICATION_REFERER,
+            "Origin": APPLICATION_REFERER.rstrip("/"),
         },
     )
     try:
