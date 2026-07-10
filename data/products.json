@@ -51,6 +51,7 @@
     {
       "product_id": "cpu-ryzen9-9950x3d",
       "name": "AMD Ryzen 9 9950X3D",
+      "search_keyword": "AMD Ryzen9 9950X3D",
       "category": "cpu",
       "brand": "AMD",
       "spec_summary": "Zen5デスクトップ最上位。16コード/高メモリ帯域。クリエイティブ・マルチスレッド最強クラス。",
@@ -60,6 +61,7 @@
     {
       "product_id": "cpu-ryzen7-9800x3d",
       "name": "AMD Ryzen 7 9800X3D",
+      "search_keyword": "AMD Ryzen7 9800X3D",
       "category": "cpu",
       "brand": "AMD",
       "spec_summary": "3D V-Cache搭載。ゲーミング性能で高評価が続く定番モデル。",
@@ -69,6 +71,7 @@
     {
       "product_id": "cpu-ryzen7-9700x",
       "name": "AMD Ryzen 7 9700X",
+      "search_keyword": "AMD Ryzen7 9700X",
       "category": "cpu",
       "brand": "AMD",
       "spec_summary": "8コア/16スレッド。ゲーミング用途のコスパ最良帯と評価。",
@@ -78,6 +81,7 @@
     {
       "product_id": "cpu-core-ultra9-285k",
       "name": "Intel Core Ultra 9 285K",
+      "search_keyword": "Intel Core Ultra9 285K",
       "category": "cpu",
       "brand": "Intel",
       "spec_summary": "Core Ultra 200シリーズ最上位。マルチスレッド性能重視。",
@@ -87,6 +91,7 @@
     {
       "product_id": "cpu-core-ultra7-265k",
       "name": "Intel Core Ultra 7 265K",
+      "search_keyword": "Intel Core Ultra7 265K",
       "category": "cpu",
       "brand": "Intel",
       "spec_summary": "Core Ultra 200シリーズ中上位。価格重視ユーザー向け。",
