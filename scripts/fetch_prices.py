@@ -75,12 +75,15 @@ def get_credentials():
 def call_api(params):
     query = urllib.parse.urlencode(params)
     url = f"{ENDPOINT}?{query}"
+    # 2026-07-11: 楽天アプリを「API/Backend Service」タイプ（IP許可リスト方式）に変更したため、
+    # 「Web Application」タイプ用に付けていた偽装Origin/Refererヘッダーは撤去した。
+    # ブラウザのAPI Test Formでは同一パラメータでヘッダー無しでも成功しており、
+    # このヘッダーがむしろ不整合（バックエンドサービスなのにブラウザを偽装している）と
+    # 判定され弾かれていた可能性を検証する。
     req = urllib.request.Request(
         url,
         headers={
             "User-Agent": "pcparts-deals-fetcher/1.0",
-            "Referer": APPLICATION_REFERER,
-            "Origin": APPLICATION_REFERER.rstrip("/"),
         },
     )
     try:
