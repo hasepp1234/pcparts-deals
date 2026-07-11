@@ -1,9 +1,14 @@
 name: Daily price update
 
+# 2026-07-11: 自動cronは無効化した。
+# 理由: 楽天API側がこのアプリ(Web Application登録、Allowed websitesはドメイン制限)を
+# データセンターIP(GitHub Actionsのホストランナー)からの機械的アクセスとして扱い、
+# 403エラーにはならないが検索結果が常にhits=0になる問題を確認したため。
+# 代わりにオーナーPC(タスクスケジューラ、スケジュールを逃したら次回起動時に実行)から
+# fetch_prices.py→detect_deals.py→build.py→git pushする運用に切り替えた。
+# このワークフローはworkflow_dispatch（手動実行）のみ残し、動作確認や将来の
+# 環境見直し時の検証用に保持する。
 on:
-  schedule:
-    # 毎日 22:00 UTC = 日本時間 7:00 に実行
-    - cron: "0 22 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -42,6 +47,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Daily auto update: prices/deals/site $(date -u +'%Y-%m-%d')"
+            git commit -m "Manual (workflow_dispatch) update: prices/deals/site $(date -u +'%Y-%m-%d')"
             git push
           fi
