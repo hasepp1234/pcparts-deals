@@ -120,9 +120,17 @@ def search_by_keyword(app_id, access_key, affiliate_id, keyword):
     if affiliate_id:
         params["affiliateId"] = affiliate_id
     data = call_api(params)
-    if not data or "items" not in data or not data["items"]:
+    # 2026-07-11判明：楽天APIのレスポンスキーは大文字始まりの "Items"（formatVersion=1/2とも共通）。
+    # 従来コードは小文字 "items" を参照していたため、実際には検索が成功していても
+    # 常に「該当なし」と誤判定していた（キー不一致でdata["items"]が常にKeyError/未検出になる）。
+    if not data or "Items" not in data or not data["Items"]:
+        print(
+            f"[DEBUG] APIレスポンスにItemsが無いか空でした。生データ先頭300文字: "
+            f"{json.dumps(data, ensure_ascii=False)[:300]}",
+            file=sys.stderr,
+        )
         return None
-    return data["items"][0]  # 標準ソート1件目を採用。初回実行時は必ず目視で妥当性を確認すること
+    return data["Items"][0]  # 標準ソート1件目を採用。初回実行時は必ず目視で妥当性を確認すること
 
 
 def search_by_item_code(app_id, access_key, affiliate_id, item_code):
@@ -137,9 +145,17 @@ def search_by_item_code(app_id, access_key, affiliate_id, item_code):
     if affiliate_id:
         params["affiliateId"] = affiliate_id
     data = call_api(params)
-    if not data or "items" not in data or not data["items"]:
+    # 2026-07-11判明：楽天APIのレスポンスキーは大文字始まりの "Items"（formatVersion=1/2とも共通）。
+    # 従来コードは小文字 "items" を参照していたため、実際には検索が成功していても
+    # 常に「該当なし」と誤判定していた（キー不一致でdata["items"]が常にKeyError/未検出になる）。
+    if not data or "Items" not in data or not data["Items"]:
+        print(
+            f"[DEBUG] APIレスポンスにItemsが無いか空でした。生データ先頭300文字: "
+            f"{json.dumps(data, ensure_ascii=False)[:300]}",
+            file=sys.stderr,
+        )
         return None
-    return data["items"][0]
+    return data["Items"][0]
 
 
 def load_json(path, default):
