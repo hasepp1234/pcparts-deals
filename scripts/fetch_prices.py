@@ -80,10 +80,19 @@ def call_api(params):
     # ブラウザのAPI Test Formでは同一パラメータでヘッダー無しでも成功しており、
     # このヘッダーがむしろ不整合（バックエンドサービスなのにブラウザを偽装している）と
     # 判定され弾かれていた可能性を検証する。
+    # 2026-07-11: 独自User-Agentだと楽天側のBot対策(WAF)に機械的アクセスとして
+    # 識別され、200 OKのまま空応答（hits=0）を返される可能性を検証するため、
+    # 一時的に実ブラウザのUser-Agent文字列に変更してテストする。
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "pcparts-deals-fetcher/1.0",
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/125.0.0.0 Safari/537.36"
+            ),
+            "Accept": "application/json, text/plain, */*",
+            "Accept-Language": "ja,en-US;q=0.9,en;q=0.8",
         },
     )
     try:
