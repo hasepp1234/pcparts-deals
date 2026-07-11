@@ -75,10 +75,12 @@ def call_api(params):
     query = urllib.parse.urlencode(params)
     url = f"{ENDPOINT}?{query}"
     try:
+        # 2026-07-11: Windows既定のロケール（cp932）でデコードされ、レスポンス中の
+        # UTF-8文字（商品名の日本語等）でUnicodeDecodeErrorになり全体がクラッシュする
+        # 事象が発生したため、bytesのまま受け取りUTF-8で明示的にデコードする。
         result = subprocess.run(
             ["curl", "-s", "-m", "15", url],
             capture_output=True,
-            text=True,
             timeout=20,
         )
     except FileNotFoundError:
@@ -93,13 +95,15 @@ def call_api(params):
         return None
 
     if result.returncode != 0:
-        print(f"[ERROR] curl終了コード {result.returncode}: {result.stderr}", file=sys.stderr)
+        stderr_text = result.stderr.decode("utf-8", errors="replace")
+        print(f"[ERROR] curl終了コード {result.returncode}: {stderr_text}", file=sys.stderr)
         return None
 
+    stdout_text = result.stdout.decode("utf-8", errors="replace")
     try:
-        return json.loads(result.stdout)
+        return json.loads(stdout_text)
     except json.JSONDecodeError:
-        print(f"[ERROR] JSON解析失敗。レスポンス先頭: {result.stdout[:200]}", file=sys.stderr)
+        print(f"[ERROR] JSON解析失敗。レスポンス先頭: {stdout_text[:200]}", file=sys.stderr)
         return None
 
 
