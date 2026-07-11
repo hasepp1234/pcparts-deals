@@ -36,7 +36,7 @@ DATA_DIR = os.path.join(BASE_DIR, "data")
 PRODUCTS_PATH = os.path.join(DATA_DIR, "products.json")
 PRICES_PATH = os.path.join(DATA_DIR, "prices.json")
 
-ENDPOINT = "https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20260401"
+ENDPOINT = "https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20260701"
 REQUEST_INTERVAL_SEC = 1.0  # 楽天API側のレート制限対策（目安1req/sec。要件登録画面ではQPS=1で申請）
 # 楽天API（2026年新仕様・Webサービス種別）はOrigin/Refererヘッダーが無いと
 # 403 REQUEST_CONTEXT_BODY_HTTP_REFERRER_MISSING で拒否される。
