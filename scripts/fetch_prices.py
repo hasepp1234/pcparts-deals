@@ -25,11 +25,10 @@ APIドキュメント: https://webservice.rakuten.co.jp/documentation/ichiba-ite
 import datetime
 import json
 import os
+import subprocess
 import sys
 import time
-import urllib.error
 import urllib.parse
-import urllib.request
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # site/
 DATA_DIR = os.path.join(BASE_DIR, "data")
@@ -38,12 +37,12 @@ PRICES_PATH = os.path.join(DATA_DIR, "prices.json")
 
 ENDPOINT = "https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20260701"
 REQUEST_INTERVAL_SEC = 1.0  # 楽天API側のレート制限対策（目安1req/sec。要件登録画面ではQPS=1で申請）
-# 楽天API（2026年新仕様・Webサービス種別）はOrigin/Refererヘッダーが無いと
-# 403 REQUEST_CONTEXT_BODY_HTTP_REFERRER_MISSING で拒否される。
-# エラーメッセージは「Referer」だが実際に効くのは「Origin」ヘッダー（2026-07-09
-# GitHub Actions実機テストで確認。Refererのみでは403のまま、Origin追加で解消）。
-# 念のため両方を登録済みApplication URLで送信する。
-APPLICATION_REFERER = "https://pcparts-deals.vercel.app/"
+# 2026-07-11判明：Python urllib.request（生ソケット/TLS実装）経由だと楽天側で
+# 200 OKのまま空応答（hits=0）にされる事象を確認。同一URL・同一パラメータを
+# curlコマンドで直接叩いたところ正常にヒットした（count=162）ため、原因は
+# urllib特有の通信方式（TLS指紋等）がBot対策に引っかかっていた可能性が高いと判断。
+# 対策として、Python標準のHTTPクライアントは使わず、OS付属のcurl.exeを
+# サブプロセスとして呼び出す方式に変更した。
 
 
 def load_env():
@@ -75,35 +74,32 @@ def get_credentials():
 def call_api(params):
     query = urllib.parse.urlencode(params)
     url = f"{ENDPOINT}?{query}"
-    # 2026-07-11: 楽天アプリを「API/Backend Service」タイプ（IP許可リスト方式）に変更したため、
-    # 「Web Application」タイプ用に付けていた偽装Origin/Refererヘッダーは撤去した。
-    # ブラウザのAPI Test Formでは同一パラメータでヘッダー無しでも成功しており、
-    # このヘッダーがむしろ不整合（バックエンドサービスなのにブラウザを偽装している）と
-    # 判定され弾かれていた可能性を検証する。
-    # 2026-07-11: 独自User-Agentだと楽天側のBot対策(WAF)に機械的アクセスとして
-    # 識別され、200 OKのまま空応答（hits=0）を返される可能性を検証するため、
-    # 一時的に実ブラウザのUser-Agent文字列に変更してテストする。
-    req = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": (
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/125.0.0.0 Safari/537.36"
-            ),
-            "Accept": "application/json, text/plain, */*",
-            "Accept-Language": "ja,en-US;q=0.9,en;q=0.8",
-        },
-    )
     try:
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            return json.loads(resp.read().decode("utf-8"))
-    except urllib.error.HTTPError as e:
-        body = e.read().decode("utf-8", errors="ignore")
-        print(f"[ERROR] HTTP {e.code}: {body}", file=sys.stderr)
+        result = subprocess.run(
+            ["curl", "-s", "-m", "15", url],
+            capture_output=True,
+            text=True,
+            timeout=20,
+        )
+    except FileNotFoundError:
+        print(
+            "[ERROR] curlコマンドが見つかりません。Windows 10/11には標準で"
+            "curl.exeが含まれていますが、PATHが通っているか確認してください。",
+            file=sys.stderr,
+        )
         return None
     except Exception as e:
-        print(f"[ERROR] request failed: {e}", file=sys.stderr)
+        print(f"[ERROR] curl実行失敗: {e}", file=sys.stderr)
+        return None
+
+    if result.returncode != 0:
+        print(f"[ERROR] curl終了コード {result.returncode}: {result.stderr}", file=sys.stderr)
+        return None
+
+    try:
+        return json.loads(result.stdout)
+    except json.JSONDecodeError:
+        print(f"[ERROR] JSON解析失敗。レスポンス先頭: {result.stdout[:200]}", file=sys.stderr)
         return None
 
 
