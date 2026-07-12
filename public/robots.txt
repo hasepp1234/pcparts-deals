@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pcparts-deals.vercel.app/sitemap.xml
+Sitemap: https://pcparts-deals.com/sitemap.xml

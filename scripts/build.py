@@ -17,7 +17,7 @@ data/products.json, data/prices.json, data/deals.json から
     python3 scripts/build.py
 
 前提・注意:
-  - SITE_URL は仮のVercel URL。本番ドメイン確定後に必ず更新すること（GA4/AdSense/構造化データにも影響）。
+  - SITE_URL は2026-07-12に独自ドメイン確定に伴い更新済み（GA4/AdSense/構造化データにも影響するため要注意）。
   - GA4_MEASUREMENT_ID は未設定（空文字）。section14でNo.59用の測定IDが確定してから設定する。
     空のままなら計測タグは出力しない（誤って別サイトの測定IDを流用しないためのガード）。
   - 全アフィリンクに「PR」バッジを表示し、フッターにアフィリエイト開示文を掲載（景表法・ステマ規制対応）。
@@ -40,7 +40,7 @@ PRICES_PATH = os.path.join(DATA_DIR, "prices.json")
 DEALS_PATH = os.path.join(DATA_DIR, "deals.json")
 
 # --- サイト設定（要確認事項。計画書セクション14が確定次第ここを更新する） ---
-SITE_URL = "https://pcparts-deals.vercel.app"  # 仮URL。本番ドメイン確定後に要更新
+SITE_URL = "https://pcparts-deals.com"  # 2026-07-12: 独自ドメイン確定に伴い更新済み
 SITE_NAME = "PCパーツセール情報"
 GA4_MEASUREMENT_ID = "G-XZPN5YCFJW"  # 2026-07-09 GA4プロパティ「PCパーツセール情報 (No.59)」作成時に発行
 ADSENSE_CLIENT_ID = "ca-pub-9618539805759239"  # 2026-07-09 AdSenseに本サイトを追加し所有権確認用に設定（事業用アカウント）
@@ -454,4 +454,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+        main()

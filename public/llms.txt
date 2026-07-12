@@ -4,16 +4,16 @@
 > 掲載している情報サイトです。価格は取得時点のものです。
 
 ## 主要ページ
-- トップページ（値下がりランキング）: https://pcparts-deals.vercel.app/index.html
-- グラフィックボード (GPU)一覧: https://pcparts-deals.vercel.app/category/gpu.html
-- CPU一覧: https://pcparts-deals.vercel.app/category/cpu.html
-- SSD一覧: https://pcparts-deals.vercel.app/category/ssd.html
-- メモリ一覧: https://pcparts-deals.vercel.app/category/memory.html
-- マザーボード一覧: https://pcparts-deals.vercel.app/category/motherboard.html
-- 電源ユニット一覧: https://pcparts-deals.vercel.app/category/psu.html
-- PCケース一覧: https://pcparts-deals.vercel.app/category/case.html
-- CPUクーラー一覧: https://pcparts-deals.vercel.app/category/cooler.html
-- 周辺機器一覧: https://pcparts-deals.vercel.app/category/peripheral.html
+- トップページ（値下がりランキング）: https://pcparts-deals.com/index.html
+- グラフィックボード (GPU)一覧: https://pcparts-deals.com/category/gpu.html
+- CPU一覧: https://pcparts-deals.com/category/cpu.html
+- SSD一覧: https://pcparts-deals.com/category/ssd.html
+- メモリ一覧: https://pcparts-deals.com/category/memory.html
+- マザーボード一覧: https://pcparts-deals.com/category/motherboard.html
+- 電源ユニット一覧: https://pcparts-deals.com/category/psu.html
+- PCケース一覧: https://pcparts-deals.com/category/case.html
+- CPUクーラー一覧: https://pcparts-deals.com/category/cooler.html
+- 周辺機器一覧: https://pcparts-deals.com/category/peripheral.html
 
 ## 収益モデル
 アフィリエイトリンク（Amazonアソシエイト・楽天アフィリエイト等）による収益を得ています。
