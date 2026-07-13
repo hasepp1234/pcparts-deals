@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "note": "全7カテゴリ(gpu/cpu/ssd/memory/motherboard/psu/case/cooler/peripheral)を収録。2026-07-10にmemory以下6カテゴリを追加（課題一覧ID4対応）。rakuten_item_code / asin はfetch_prices.py側の商品検索で照合・補完する（本ファイルでは未確定のためnull）。spec_summaryは概況のみで、公開前に一次ソース(メーカー公式サイト)で価格・仕様を再確認すること。なお2026-07-10時点、楽天APIは実在の定番品検索でも0件が続く不具合を調査中（課題一覧ID3）のため、rakuten_item_code自動解決は保留中。",
-  "last_updated": "2026-07-10",
+  "note": "全7カテゴリ(gpu/cpu/ssd/memory/motherboard/psu/case/cooler/peripheral)を収録。2026-07-10にmemory以下6カテゴリを追加（課題一覧ID4対応）。rakuten_item_code / asin はfetch_prices.py側の商品検索で照合・補完する（本ファイルでは未確定のためnull）。spec_summaryは概況のみで、公開前に一次ソース(メーカー公式サイト)で価格・仕様を再確認すること。2026-07-13、楽天APIで未取得だった残り3商品（ssd-xpg-mars980-blade / ssd-gen5-value / case-midtower-entry）について、具体的な実在商品（XPG MARS 980 BLADE／SPD SP5-001TN／MSI MAG FORGE 110R）に確定しsearch_keywordを設定（課題一覧ID3の残タスク対応）。",
+  "last_updated": "2026-07-13",
   "products": [
     {
       "product_id": "gpu-rtx5090",
@@ -119,11 +119,12 @@
     {
       "product_id": "ssd-xpg-mars980-blade",
       "name": "XPG MARS 980 BLADE NVMe SSD",
+      "search_keyword": "XPG MARS 980 BLADE",
       "category": "ssd",
       "brand": "XPG (ADATA)",
-      "spec_summary": "PCIe5.0対応。最大14,000MB/s級。PS5対応ヒートシンクモデルあり。",
+      "spec_summary": "PCIe5.0対応。最大14,000MB/s級。PS5対応ヒートシンクモデルあり。2026-07-13時点、楽天市場（デイ・パレット等）での取扱を確認（一次ソース: XPG公式サイト製品ページ）。",
       "asin": null,
-      "rakuten_item_code": null
+      "rakuten_item_code": "day-palette:10000734"
     },
     {
       "product_id": "ssd-samsung-990pro",
@@ -136,12 +137,13 @@
     },
     {
       "product_id": "ssd-gen5-value",
-      "name": "PCIe5.0 NVMe SSD（コスパモデル）",
+      "name": "SPD 内蔵SSD SP5-001TN 1TB（PCIe5.0コスパモデル）",
+      "search_keyword": "SPD SP5-001TN",
       "category": "ssd",
-      "brand": "各社",
-      "spec_summary": "PCIe5.0参入の価格重視モデル。型番は公開前に一次ソースで確定。",
+      "brand": "SPD",
+      "spec_summary": "PCIe5.0 NVMe、DRAM搭載、最大読込14,000MB/s・書込11,000MB/s、PS5動作確認済、5年保証。2026-07-13時点、楽天市場SPD公式店・価格.comで取扱／価格帯18,900円前後を確認（一次ソース: 価格.com商品ページ、SPD楽天市場店）。",
       "asin": null,
-      "rakuten_item_code": null
+      "rakuten_item_code": "spd-shop:10005508"
     },
     {
       "product_id": "memory-crucial-ddr5-6400-32gb",
@@ -255,13 +257,13 @@
     },
     {
       "product_id": "case-midtower-entry",
-      "name": "ミドルタワーPCケース（エントリーモデル）",
-      "search_keyword": "PCケース ミドルタワー エントリー",
+      "name": "MSI MAG FORGE 110R（ミドルタワーPCケース）",
+      "search_keyword": "MSI MAG FORGE 110R",
       "category": "case",
-      "brand": "各社",
-      "spec_summary": "7,000円台から選べる入門用ミドルタワー。ATXマザーボード搭載可。",
+      "brand": "MSI",
+      "spec_summary": "ATX/M-ATX/ITX対応ミドルタワー。ARGBファン標準搭載、強化ガラスサイドパネル、拡張スロット7基。2026-07-13時点、楽天市場で価格帯9,000円台を確認（一次ソース: MSI公式サイト仕様ページ jp.msi.com）。",
       "asin": null,
-      "rakuten_item_code": null
+      "rakuten_item_code": "cross-one:10027506"
     },
     {
       "product_id": "cooler-air-thermalright-pa120se",
