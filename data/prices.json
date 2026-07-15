@@ -982,5 +982,261 @@
     "price": 35200,
     "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00u1z7n.r39f453e.g00u1z7n.r39f65b4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frealforce%2Fx1pb%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frealforce%2Fi%2F10000190%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
     "captured_at": "2026-07-14T08:34:23"
+  },
+  {
+    "product_id": "gpu-rtx5090",
+    "shop": "speedwagon",
+    "shop_name": "SPW楽天市場店",
+    "price": 737000,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00rw28n.r39f4486.g00rw28n.r39f64f9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fspeedwagon%2F10014542%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fspeedwagon%2Fi%2F10014964%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "gpu-rtx5070ti",
+    "shop": "psidekick",
+    "shop_name": "ピーサイドキック 楽天市場店",
+    "price": 163800,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00uagrn.r39f4c42.g00uagrn.r39f6cd4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpsidekick%2F4988755071208%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpsidekick%2Fi%2F10000985%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "gpu-rtx5070",
+    "shop": "psidekick",
+    "shop_name": "ピーサイドキック 楽天市場店",
+    "price": 163800,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00uagrn.r39f4c42.g00uagrn.r39f6cd4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpsidekick%2F4988755071208%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpsidekick%2Fi%2F10000985%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "gpu-rtx5060ti-16gb",
+    "shop": "tales-store",
+    "shop_name": "TalesStore 楽天市場店",
+    "price": 174000,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00ufznn.r39f4a80.g00ufznn.r39f60e4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftales-store%2F202505150952454988755072021%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftales-store%2Fi%2F10052339%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "gpu-rx9070xt",
+    "shop": "psidekick",
+    "shop_name": "ピーサイドキック 楽天市場店",
+    "price": 106000,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00uagrn.r39f4c42.g00uagrn.r39f6cd4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpsidekick%2F4988755070973%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpsidekick%2Fi%2F10000811%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "cpu-ryzen9-9950x3d",
+    "shop": "jism",
+    "shop_name": "Joshin web 家電とPCの大型専門店",
+    "price": 107680,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwn.r39f45aa.g00pukwn.r39f68c3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F0730143315555-44-22814-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14567389%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "cpu-ryzen7-9800x3d",
+    "shop": "jism",
+    "shop_name": "Joshin web 家電とPCの大型専門店",
+    "price": 62799,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwn.r39f45aa.g00pukwn.r39f68c3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F0730143315289-44-22814-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14556564%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "cpu-ryzen7-9700x",
+    "shop": "jism",
+    "shop_name": "Joshin web 家電とPCの大型専門店",
+    "price": 42526,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwn.r39f45aa.g00pukwn.r39f68c3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F0730143315593-44-22814-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14327101%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "cpu-core-ultra9-285k",
+    "shop": "noah-shopping",
+    "shop_name": "ノア商社 楽天市場店",
+    "price": 100280,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvn.r39f4442.g00u3gvn.r39f6a0b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F0735858550383%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10002996%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "cpu-core-ultra7-265k",
+    "shop": "dospara-r",
+    "shop_name": "ドスパラ楽天市場店",
+    "price": 51680,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00u67pn.r39f481b.g00u67pn.r39f6b57/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdospara-r%2Fic512736%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdospara-r%2Fi%2F10003308%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "ssd-wd-black-sn7100",
+    "shop": "tekwind",
+    "shop_name": "TEKWIND SHOP",
+    "price": 106134,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00u9mln.r39f460e.g00u9mln.r39f6443/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftekwind%2Fwds200t4x0e%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftekwind%2Fi%2F10001091%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "ssd-crucial-t705",
+    "shop": "americagoodvibes",
+    "shop_name": "アメリカグッドバイブス",
+    "price": 90980,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00upw5n.r39f46a3.g00upw5n.r39f63db/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Famericagoodvibes%2Faytrg7rkzk%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Famericagoodvibes%2Fi%2F10009055%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "ssd-xpg-mars980-blade",
+    "shop": "day-palette",
+    "shop_name": "デイ・パレット 楽天市場店",
+    "price": 39710,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00uofbn.r39f4531.g00uofbn.r39f67f8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fday-palette%2Fsmar-980b-1tcs-i%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fday-palette%2Fi%2F10000734%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "ssd-samsung-990pro",
+    "shop": "jism",
+    "shop_name": "Joshin web 家電とPCの大型専門店",
+    "price": 168667,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwn.r39f45aa.g00pukwn.r39f68c3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4560441098418-44-53600-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14054834%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "ssd-gen5-value",
+    "shop": "spd-shop",
+    "shop_name": "SPD楽天市場店",
+    "price": 28380,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00sal7n.r39f4a47.g00sal7n.r39f62e6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fspd-shop%2Fspdssd1t-sp5n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fspd-shop%2Fi%2F10005508%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "memory-crucial-ddr5-6400-32gb",
+    "shop": "tales-store",
+    "shop_name": "TalesStore 楽天市場店",
+    "price": 150437,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00ufznn.r39f4a80.g00ufznn.r39f60e4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftales-store%2F202506050017250649528945709%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftales-store%2Fi%2F10054442%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "memory-ddr5-6000-32gb-value",
+    "shop": "pckoubou",
+    "shop_name": "パソコン工房 楽天市場店",
+    "price": 77576,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00q0jsn.r39f487b.g00q0jsn.r39f64c6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpckoubou%2Fm4s1p873734%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpckoubou%2Fi%2F10291843%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "memory-ddr5-64gb-highcap",
+    "shop": "r-style-ra",
+    "shop_name": "セレクトショップ RST",
+    "price": 203214,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00tf5pn.r39f48eb.g00tf5pn.r39f67ac/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fr-style-ra%2F20250707201647_67%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fr-style-ra%2Fi%2F10058712%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "mb-am5-x870e-highend",
+    "shop": "biccamera",
+    "shop_name": "楽天ビック(ビックカメラ×楽天)",
+    "price": 93122,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00r7ldn.r39f41a3.g00r7ldn.r39f60bf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F4719331876517%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbiccamera%2Fi%2F15267534%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "mb-am5-b650e-value",
+    "shop": "jism",
+    "shop_name": "Joshin web 家電とPCの大型専門店",
+    "price": 32980,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwn.r39f45aa.g00pukwn.r39f68c3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F0197105995499-44-64958-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14569820%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "mb-lga1851-z890",
+    "shop": "dtc",
+    "shop_name": "ソフマップ楽天市場店",
+    "price": 60590,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00pyd1n.r39f4ecc.g00pyd1n.r39f6a0e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdtc%2F4526541055645%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdtc%2Fi%2F13131960%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "psu-850w-gold",
+    "shop": "jism",
+    "shop_name": "Joshin web 家電とPCの大型専門店",
+    "price": 10980,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwn.r39f45aa.g00pukwn.r39f68c3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4711527000690-44-74741-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14607466%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "psu-1000w-gold-atx31",
+    "shop": "jism",
+    "shop_name": "Joshin web 家電とPCの大型専門店",
+    "price": 20980,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwn.r39f45aa.g00pukwn.r39f68c3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F0840006667674-44-74742-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14606750%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "psu-krpw-ga850w",
+    "shop": "e-zoa",
+    "shop_name": "e-zoa 楽天市場 SHOP",
+    "price": 17360,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00qfp9n.r39f4f83.g00qfp9n.r39f65f7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fe-zoa%2Fitm0015885741%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fe-zoa%2Fi%2F10122885%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "case-antec-c5-curve",
+    "shop": "shoptsukumo",
+    "shop_name": "ツクモ 楽天市場店",
+    "price": 15131,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00tohgn.r39f4a63.g00tohgn.r39f6267/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshoptsukumo%2F9172572018%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshoptsukumo%2Fi%2F10025710%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "case-midtower-mesh-argb",
+    "shop": "b-surprise2",
+    "shop_name": "Bサプライズ 楽天市場店",
+    "price": 7180,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00sjs2n.r39f49f0.g00sjs2n.r39f6b07/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-surprise2%2F6933412774334%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-surprise2%2Fi%2F10135940%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "case-midtower-entry",
+    "shop": "cross-one",
+    "shop_name": "クロスワン 楽天市場店",
+    "price": 8178,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00u2don.r39f4089.g00u2don.r39f6451/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcross-one%2Fcsc68f262f70%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcross-one%2Fi%2F10027506%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "cooler-air-thermalright-pa120se",
+    "shop": "toyjapan",
+    "shop_name": "toy japan",
+    "price": 7399,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00tlqtn.r39f43aa.g00tlqtn.r39f6411/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftoyjapan%2F01-20241031-085945%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftoyjapan%2Fi%2F10016136%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "cooler-aio-arctic-lf3-pro-360",
+    "shop": "biccamera",
+    "shop_name": "楽天ビック(ビックカメラ×楽天)",
+    "price": 17570,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00r7ldn.r39f41a3.g00r7ldn.r39f60bf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F4895265000249%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbiccamera%2Fi%2F15162476%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "peripheral-mouse-logicool-g304",
+    "shop": "logicool",
+    "shop_name": "ロジクール 公式ストア",
+    "price": 5200,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00tpxdn.r39f4ebd.g00tpxdn.r39f6098/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flogicool%2Fg304%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flogicool%2Fi%2F10000191%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "peripheral-mouse-razer-viper-v3-pro",
+    "shop": "biccamera",
+    "shop_name": "楽天ビック(ビックカメラ×楽天)",
+    "price": 19980,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00r7ldn.r39f41a3.g00r7ldn.r39f60bf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F4571585648247%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbiccamera%2Fi%2F14738765%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
+  },
+  {
+    "product_id": "peripheral-keyboard-realforce-gx1plus",
+    "shop": "realforce",
+    "shop_name": "REALFORCE Store",
+    "price": 35200,
+    "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00u1z7n.r39f453e.g00u1z7n.r39f65b4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frealforce%2Fx1pb%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frealforce%2Fi%2F10000190%2F&rafcid=wsc_i_is_7a872375-4747-4de0-9c5d-b47c0e5c8f9c",
+    "captured_at": "2026-07-15T22:31:36"
   }
 ]
