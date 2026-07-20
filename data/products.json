@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "note": "全7カテゴリ(gpu/cpu/ssd/memory/motherboard/psu/case/cooler/peripheral)を収録。2026-07-10にmemory以下6カテゴリを追加（課題一覧ID4対応）。rakuten_item_code / asin はfetch_prices.py側の商品検索で照合・補完する（本ファイルでは未確定のためnull）。spec_summaryは概況のみで、公開前に一次ソース(メーカー公式サイト)で価格・仕様を再確認すること。2026-07-13、楽天APIで未取得だった残り3商品（ssd-xpg-mars980-blade / ssd-gen5-value / case-midtower-entry）について、具体的な実在商品（XPG MARS 980 BLADE／SPD SP5-001TN／MSI MAG FORGE 110R）に確定しsearch_keywordを設定（課題一覧ID3の残タスク対応）。",
-  "last_updated": "2026-07-13",
+  "last_updated": "2026-07-15",
   "products": [
     {
       "product_id": "gpu-rtx5090",
